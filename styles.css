@@ -1,0 +1,43 @@
+* {  box-sizing: border-box; }
+
+/* Style the body */
+body { font-family: Arial;  margin: 0; }
+
+/* Column container */
+.row {  display: flex; flex-wrap: wrap; }
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side { flex: 30%; background-color: #f1f1f1; padding: 20px; }
+
+/* Main column */
+.main { flex: 70%; background-color: white; padding: 20px; }
+
+/* image */
+
+.pictureOfMe{width:200px;height:200px;}
+/* Footer */
+.footer { padding: 20px; text-align: center; background: #ddd; }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+.fakeimg{background-color: #aaa; width: 100%; padding: 20px; }
+
+.fa-github-square  .fa-linkedin-square, .fa-twitter-square {color: black;}
+
+.fa-github-square:hover  .fa-linkedin-square:hover, .fa-twitter-square:hover {color: red;}
+
+.socialURL{align-self: center;}
+
+.socialIcon{align-self: center;}
+
+.socialMedia{display:flex;justify-content:space-between;background-color: #aaa; width: 100%; padding: 20px; }
+
+.repoVault{min-height:230px;}
+
+#showHideRepos{overflow: auto;width:auto;height:400px;padding:5px 5px;margin:5px 5px;}
